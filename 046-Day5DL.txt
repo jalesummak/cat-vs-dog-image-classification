@@ -1,0 +1,130 @@
+00:25:58	Yunus Kose:	geçmiş olsun hocam
+01:08:34	Yusuf Bodur:	<img src='Imputation.png' width="50%" height="50%">
+01:11:19	ıtır ergün:	asistan arkadaşlar
+01:11:34	Hande Çarkcı:	Reacted to "asistan arkadaşlar" with 👍
+01:14:57	ıtır ergün:	👍
+01:17:44	Muhlise OKYAY:	Hocam bu kadar yeni paketlerden nasıl haberimiz olacak
+01:42:04	Yunus Kose:	en yakin komsuya bakmadan once her sutunu kucukten buyuge siralama yapsak daha dogru sonuc cikarmi acaba
+01:44:45	Zafer Acar:	from sklearn.experimental import enable_iterative_imputerfrom sklearn.impute import IterativeImputerfrom sklearn.linear_model import LinearRegression
+01:44:50	Zafer Acar:	lr=LinearRegression()imp=IterativeImputer(estimator=lr)lrdata=imp.fit_transform(df)
+01:44:55	Zafer Acar:	pd.DataFrame(lrdata)
+01:50:41	İclal Cebecioğlu:	Son yaptığımız yöntemin ismi ne hocam
+01:51:31	Özkan Günalp:	- MICE (Multiple Imputation by Chained Equations) yöntemi
+01:52:03	Özkan Günalp:	Miceforest
+01:57:19	İclal Cebecioğlu:	Replying to "- MICE (Multiple Imp…"
+Teşekkürler
+02:03:30	Zafer Acar:	df=df.replace({'Y':1,'N':0,'BS':1,'MS':2,'PhD':3})
+02:06:33	Zafer Acar:	<img src='https://cdn.educba.com/academy/wp-content/uploads/2019/05/Normalization-Formula.jpg' width=200>
+02:21:56	Ufuk Erkan:	izohips sanki
+02:21:57	Mustafa Hilmi Asik:	izohips ler
+02:25:00	Berat Deniz:	sonra veriyi nasıl geri getireceğiz hocam
+02:25:53	Zafer Acar:	from sklearn.decomposition import PCA
+02:55:02	Devrim:	anlatın hocam
+02:55:20	Devrim:	yoksa bizimde içimizde kalacak:)
+02:57:25	Osman Özcanlı:	Mars Marslılar’a aittir - Zafer Acar
+03:12:13	Ufuk Erkan:	hala yüklenmedi hocam
+03:27:06	Osman Özcanlı:	hocam bilgi amacli yazmak istedim size, tensorlow yuklenmedigi icin, digger tum kodlari da yazip calistiramaz duruma geldim
+03:27:17	Osman Özcanlı:	takip edecegim size su an
+03:31:11	Ayşegül Tuna:	Hocam benim elektrikler hala gelmedi telefonumun şarjı bitmek üzere. Kayıtlı videodan izleyip tamamlarım kusura bakmayın.
+03:35:36	Zafer Acar:	from tensorflow.keras.models import Sequentialfrom tensorflow.keras.layers import Dense
+03:46:06	Zafer Acar:	model=Sequential()model.add(Dense(80, activation='relu')) # hayal urunumodel.add(Dense(120, activation='relu'))model.add(Dense(64, activation='relu')) model.add(Dense(30, activation='relu')) model.add(Dense(8, activation='relu'))model.add(Dense(1, activation='sigmoid')) # classification son layer sigmoid eger 1-0 isemodel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+03:53:26	Zafer Acar:	history=model.fit(x,y, batch_size=32, validation_split=0.10,verbose=2, epochs=100)
+04:16:12	Muhlise OKYAY:	Hocam benim hep dl ml le aynı veriyor DL de bir gelişme yaşayamıyorum
+04:28:23	Muhlise OKYAY:	Hocam Tübitak ta da bu sistem var ama tabiii dah küçüktür
+04:28:52	Muhlise OKYAY:	Hayır konusu olması lazım tezi
+04:29:01	Muhlise OKYAY:	Tez hocasiyla yazı yazıyorlar
+04:29:46	Devrim:	kotanız yok mu hocam?
+04:30:50	Devrim:	motive edici bir ortam
+04:30:56	Muhlise OKYAY:	Hocam yarış mobbing gibi şeyler var mi
+04:31:01	Muhlise OKYAY:	Competitive
+04:32:31	İdris Özçelik:	Amerikayı Amerika yapan bunlar herhalde
+04:35:57	Devrim:	Hocam "milyar dolar" biriminden bahsediyorsunuz ,  bilgisayar donanım tutarı  yada sağlanan faydalar hep "milyar dolar" birimi.. ölçek zaten burdan belli oluyor
+04:36:10	Devrim:	tşkler
+04:40:30	Muhlise OKYAY:	Sosyallesiyoruz hocam
+04:41:31	Devrim:	dünyanın ve ülkemizin en disiplinli en zeki insanlarını en iyi çalışma ortamlarında çalışmalarını sağlıyorlar... başarı kaçınılmaz...
+04:46:43	Zafer Acar:	from sklearn.model_selection import train_test_split
+04:46:48	Zafer Acar:	x_train,x_test,y_train,y_test=train_test_split(x,y, test_size=.20,random_state=42)
+04:54:54	Zafer Acar:	history=model.fit(x_train,y_train, validation_data=(x_test,y_test), batch_size=64, verbose=0, epochs=1200)
+04:56:31	Özkan Günalp:	Arkadaşlar, başka hata alan var mı?
+04:56:46	Özkan Günalp:	Bizlere de sorabilirsiniz:)
+04:57:05	EYUPBAGDATLI:	Bana bağlanabilir misiniz bir
+04:57:11	Özkan Günalp:	tabii
+04:57:28	Mert Ali:	böyle bir hatam var
+04:58:15	Hande Çarkcı:	Replying to "böyle bir hatam var"
+
+mean_squared_error  "r" harfi eksik
+04:58:20	Ufuk Erkan:	Replying to "böyle bir hatam var"
+
+erro yerine error yazmak gerekiyor
+04:58:41	Mert Ali:	tamamdır teşekkürler
+05:00:35	Özkan Günalp:	Arkadaşlar, Hocamızı çok yormayalımm
+05:02:46	ıtır ergün:	hangi dosyaydı
+05:02:51	ıtır ergün:	day3teki
+05:03:25	Berat Deniz:	Ben bir şeyi anlamadım veya kaçırdım sonucumuz 0 1 olmayacak diye sigmoid kullanmadık son nöronu eklerken fakat loss tipini modelin vereceği değere göremi belirletiyoruz?
+05:03:43	Faruk AZAKLI:	(
+05:03:53	Berat Deniz:	tamamdır hocam sağolun
+05:14:00	Zafer Acar:	early_stop=EarlyStopping(monitor='val_loss',patience=10)
+05:14:06	Zafer Acar:	history=model.fit(x_train,y_train, validation_data=(x_test,y_test), epochs=130,batch_size=32,callbacks=[early_stop],verbose=1)
+05:15:11	Ufuk Erkan:	bu şekilde bir hata verdi hocam
+05:15:30	Yunus Kose:	bende de 24 de durdu hocam
+05:16:35	Ufuk Erkan:	Replying to "{A95AF3D6-1320-49AE-8EEA-1BEC70987C22}.png"
+
+çözdüm. ok
+05:16:40	Özkan Günalp:	Reacted to "çözdüm. ok" with 👍
+05:16:43	Ufuk Erkan:	Reacted to "çözdüm. ok" with 👍
+06:05:35	Muhlise OKYAY:	Yok artıkkkk
+06:10:44	İdris Özçelik:	sebep
+06:10:58	Muhlise OKYAY:	Oppenheimer filmi gibi
+06:17:25	Zafer Acar:	x=df.drop('Price',axis=1)y=df[['Price']]x=pd.get_dummies(x,drop_first=True)model=Sequential()model.add(Dense(64,activation='relu'))model.add(Dense(128,activation='relu'))model.add(Dense(256,activation='relu'))model.add(Dense(128,activation='relu'))model.add(Dense(64,activation='relu'))model.add(Dense(32,activation='relu'))model.add(Dense(1))model.compile(loss='mean_squared_error', optimizer='adam')early_stop=EarlyStopping(monitor='val_loss',patience=10)history=model.fit(x_train,y_train, validation_data=(x_test,y_test), epochs=130,batch_size=32,callbacks=[early_stop],verbose=1)
+06:20:45	İclal Cebecioğlu:	Son kodu atabilir misiniz
+06:27:47	Yunus Emre Arık:	bendeki hata dosya adı farklıydı cars.xls diyince düzeldi
+06:28:17	Tevfik Akkoyun:	can't convert np.ndarray of type numpy.object_. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint64, uint32, uint16, uint8, and bool.bendeki hata
+06:29:48	Ufuk Erkan:	Replying to "pytorch.py"
+
+çalıştı 👍
+06:30:00	Tevfik Akkoyun:	bende de çalıştı
+06:37:47	Yunus Emre Arık:	böyle bi hatam var
+06:38:10	Hande Çarkcı:	pip install icrawler
+06:38:15	Hande Çarkcı:	from icrawler.builtin import BingImageCrawlercrawler = BingImageCrawler(storage={'root_dir': 'dataset'})crawler.crawl(keyword='horse', max_num=10)
+06:38:31	Hande Çarkcı:	hata alanlar için alternatif olarak bunu tavsiye ederim
+06:39:28	Berat Deniz:	hocam imghdr deprecated diyor 3.13 için
+06:40:52	Tevfik Akkoyun:	name 'BingImageCrawler' is not defined
+06:41:11	Tevfik Akkoyun:	icrawler ile yapınca da bu hatayı alıyorum.
+06:41:12	Hande Çarkcı:	Replying to "name 'BingImageCrawl..."
+
+pip install icrawler
+06:42:15	Ufuk Erkan:	Replying to "hata alanlar için al..."
+
+denedim çalıştı. teşekkürler
+06:42:47	Zafer Acar:	pip install bing-image-downloader
+06:42:53	Zafer Acar:	from bing_image_downloader import downloader
+06:42:59	Zafer Acar:	downloader.download('horse',limit=100)
+06:44:15	ıtır ergün:	hata alan oldu mu import yapınca
+06:45:17	Tuba:	Replying to "hata alan oldu mu im..."
+
+tensorflow için mi?
+06:45:28	Zafer Acar:	(train_images,train_labels),(test_images,test_labels)=mnist.load_data()
+06:45:38	Mehmet Ali Erkul:	ben de hata aldım
+06:45:48	Tuba:	Replying to "hata alan oldu mu im..."
+
+Siz colab ta devam edin. Mac'te tensorflow hata veriyor
+06:47:39	Tuba:	İstek atıyorum
+06:48:06	ıtır ergün:	bekliyorum
+06:48:35	ıtır ergün:	yazım hatası yapmışım teşekkürler
+06:48:45	Tuba:	Tamamdır.
+06:51:20	ali galip:	Filtreleme için?
+06:54:04	Faruk AZAKLI:	turkish style
+07:02:31	Zafer Acar:	train_images=train_images/255.0test_images=test_images/255.0
+07:02:36	Zafer Acar:	from tensorflow.keras.models import Sequentialfrom tensorflow.keras.layers import Dense, Conv2D, InputLayer, Reshape, MaxPooling2D, Flatten, Dropout, BatchNormalization
+07:11:08	Zafer Acar:	model=Sequential()model.add(InputLayer(shape=(28,28)))model.add(Reshape(target_shape=(28,28,1)))model.add(Conv2D(filters=12,kernel_size=(3,3), activation='relu'))model.add(MaxPooling2D(pool_size=(2,2)))model.add(Flatten())model.add(Dense(10))model.compile(optimizer='adam',loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),metrics=['accuracy'])
+07:13:40	Yunus Kose:	bende calisti hocam
+07:15:19	Yusuf Bodur:	from tensorflow.keras.models import Sequentialfrom tensorflow.keras.layers import Dense, Conv2D, Input, Reshape, MaxPooling2D, Flatten, Dropout, BatchNormalization
+07:15:23	Yusuf Bodur:	model=Sequential()
+07:15:30	Yusuf Bodur:	model.add(Input(shape=(28,28)))model.add(Reshape(target_shape=(28,28,1)))model.add(Conv2D(filters=12,kernel_size=(3,3),activation='relu'))model.add(MaxPooling2D(pool_size=(2,2)))model.add(Flatten())model.add(Dense(10))
+07:15:40	Yusuf Bodur:	model.compile(optimizer='adam',loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),metrics=['accuracy'])
+07:15:46	Yusuf Bodur:	model.fit(train_images, train_labels, validation_split=.10, epochs=10)
+07:16:50	İclal Cebecioğlu:	Bende çalıştı
+07:17:15	ıtır ergün:	bende çalıştı bu arada
+07:31:55	Zafer Acar:	index = 1  # Change this to the index of the image you want to predictimage = train_images[index].reshape(1, 28, 28)  # Reshaping for predictionpredicted_class = model.predict(image)predicted_label = np.argmax(predicted_class)# Visualize the image and resultplt.imshow(train_images[index], cmap='gray')plt.title(f'Predicted Label: {predicted_label}')plt.axis('off')plt.show()
+07:33:08	Ufuk Erkan:	import numpy as np
+07:48:45	Muhlise OKYAY:	Profesyonel fotomuzu oluşturabilir miyiz
